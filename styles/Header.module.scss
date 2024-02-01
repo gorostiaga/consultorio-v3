@@ -1,0 +1,24 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.fadeIn {
+  @include fadeIn(1s);
+}
+
+.main__container {
+  height: 40rem;
+
+  .fadeIn {
+    @include fadeIn(1s);
+  }
+
+  @media #{$mobile_device} {
+    height: 30rem;
+  }
+  @media #{$tablet_device} {
+    height: 30rem;
+  }
+  @media #{$mid_device} {
+    height: 30rem;
+  }
+}

@@ -38,7 +38,7 @@ const MainNav = () => {
       data-wow-delay="0.1s"
     >
       <Link
-        href="index.html"
+        href="/"
         className="navbar-brand d-flex align-items-center px-4 px-lg-5"
       >
         <h1 className="m-0 text-primary">
@@ -55,7 +55,7 @@ const MainNav = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto p-4 p-lg-0">
-          <Link href="index.html" className="nav-item nav-link active">
+          <Link href="/" className="nav-item nav-link active">
             Inicio
           </Link>
           <Link href="about.html" className="nav-item nav-link">
@@ -69,7 +69,7 @@ const MainNav = () => {
           </Link>
         </div>
         <Link
-          href=""
+          href="booking"
           className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
         >
           Reserva!<i className="fa fa-arrow-right ms-3"></i>

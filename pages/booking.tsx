@@ -1,7 +1,12 @@
+import BookingSection from "@/components/BookingSection";
 import React from "react";
 
 const booking = () => {
-  return <div>FUCK!!!</div>;
+  return (
+    <div>
+      <BookingSection />
+    </div>
+  );
 };
 
 export default booking;

@@ -1,4 +1,67 @@
 .main-container {
-  height: 14rem;
-  background-color: green;
+  display: flex;
+  justify-content: center;
+
+  .form-container {
+    width: 100%;
+    margin: 0.5rem 1rem;
+
+    .errorMsg {
+      max-width: 350px;
+      color: #f21e08;
+      padding: 2px 0;
+      margin-top: 2px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .success-msg {
+      color: #7ca936;
+    }
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+
+      label {
+        width: 100%;
+        padding-right: 20px;
+        margin-bottom: 5px;
+      }
+
+      input[type="number"],
+      input[type="text"] {
+        width: 70%;
+        padding: 5px;
+      }
+
+      button {
+        background-color: #0463fa;
+        color: #fff;
+        max-width: 150px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        width: 90%;
+      }
+
+      .errorMsg {
+        max-width: 100%;
+      }
+
+      .form-control {
+        flex-direction: column;
+      }
+
+      .form-control input[type="text"],
+      .form-control input[type="password"] {
+        width: inherit;
+      }
+    }
+  }
 }
